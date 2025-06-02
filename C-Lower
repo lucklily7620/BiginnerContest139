@@ -1,0 +1,17 @@
+floor = int(input())
+load = [int(x) for x in input().split()]
+step = int(0)
+ans = int(0)
+
+for i in range(0, floor-1):
+    if load[i] >= load[i+1]:
+        step += 1
+    elif step >= ans:
+        ans = step
+        step = 0
+    else:
+        step = 0
+
+if step >= ans:
+    ans = step
+print(ans)
