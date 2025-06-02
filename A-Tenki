@@ -1,0 +1,9 @@
+s = list(input())
+t = list(input())
+c = int(0)
+
+for n in range(0, 3):
+    if s[n] == t[n]:
+        c += 1
+
+print(c)
