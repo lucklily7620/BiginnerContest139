@@ -1,0 +1,6 @@
+n = int(input())
+
+i = int(0)
+c = int(n * (n-1))
+
+print(int(c//2))
